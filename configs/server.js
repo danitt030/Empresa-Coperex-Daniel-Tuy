@@ -10,6 +10,7 @@ import authRoutes from "../src/auth/auth.routes.js";
 import userRoutes from "../src/user/user.routes.js";
 import empresaRoute from "../src/empresa/empresa.routes.js";
 import apiLimiter from "../src/middlewares/rate-limit-validator.js";
+import { swaggerDocs, swaggerUi } from "./swagger.js";
 
 
 const middlewares = (app) => {
@@ -25,6 +26,7 @@ const routes = (app) =>{
     app.use("/empresaCoperex/v1/auth", authRoutes);
     app.use("/empresaCoperex/v1/User", userRoutes);
     app.use("/empresaCoperex/v1/Empresa", empresaRoute);
+    app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 }
 
 const conectarDB = async () =>{

@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "67c14417bebe218236a6748b"
+  },
+  "nombreEmpresa": "Tech Solutions",
+  "direccionEmpresa": "123 Calle Principal, Ciudad, País",
+  "telefonoEmpresa": "12345678",
+  "emailEmpresa": "contacto@techsolutions.com",
+  "ContactoDueño": "Jose Arrecis",
+  "anoFundacion": 1950,
+  "categoriaEmpresa": "Tecnologia",
+  "nivelImpacto": "ALTO",
+  "trayectoria": 75,
+  "createdAt": {
+    "$date": "2025-02-28T05:05:27.644Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T19:41:11.120Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c148b79008854065fba93b"
+  },
+  "nombreEmpresa": "ARMAS Tecnologia",
+  "direccionEmpresa": "123 Calle Principal, Ciudad, País",
+  "telefonoEmpresa": "12345678",
+  "emailEmpresa": "armsTecnology@gmail.com",
+  "ContactoDueño": "Juan Pérez",
+  "anoFundacion": 2015,
+  "categoriaEmpresa": "Tecnologia",
+  "nivelImpacto": "MEDIO",
+  "trayectoria": 10,
+  "createdAt": {
+    "$date": "2025-02-28T05:25:11.418Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T05:25:11.418Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c152e029d3355be512be11"
+  },
+  "nombreEmpresa": "ROPA Hernandez",
+  "direccionEmpresa": "123 Calle Principal, Ciudad, País",
+  "telefonoEmpresa": "12345678",
+  "emailEmpresa": "RopaHernandez123@gmail.com",
+  "ContactoDueño": "Pepe Hernandez",
+  "anoFundacion": 2024,
+  "categoriaEmpresa": "Ropa",
+  "nivelImpacto": "BAJO",
+  "trayectoria": 1,
+  "createdAt": {
+    "$date": "2025-02-28T06:08:32.701Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T06:08:32.701Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2156db39ba7ba93a776fb"
+  },
+  "nombreEmpresa": "ROPA Hernandez",
+  "direccionEmpresa": "123 Calle Principal, Ciudad, País",
+  "telefonoEmpresa": "12345678",
+  "emailEmpresa": "ejemplo@gmail.com",
+  "ContactoDueño": "Pepe Hernandez",
+  "anoFundacion": 2024,
+  "categoriaEmpresa": "Tecnologia",
+  "nivelImpacto": "BAJO",
+  "trayectoria": 1,
+  "createdAt": {
+    "$date": "2025-02-28T19:58:37.856Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T19:58:37.856Z"
+  }
+}]

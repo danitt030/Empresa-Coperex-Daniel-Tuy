@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "dafcd7ed-96f1-4b62-bbdb-1591e213e8ab",
+		"name": "Empresa coperex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37636976"
+	},
+	"item": [
+		{
+			"name": "Administradores",
+			"item": [
+				{
+					"name": "Registro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Andres\",\r\n    \"surname\": \"Tuy\",\r\n    \"username\": \"andmtt13\",\r\n    \"email\": \"AndMTTT13@gmail.com\",\r\n    \"password\": \"Cremas30*\",\r\n    \"phone\": \"45302352\",\r\n    \"role\": \"ADMIN_ROLE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/empresaCoperex/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"empresaCoperex",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"AndMTTT13@gmail.com\",\r\n    \"password\": \"Cremas30*\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/empresaCoperex/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"empresaCoperex",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar contraseña",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\": \"Cremas30**\",\r\n    \"newPassword\": \"Cremas30*\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/empresaCoperex/v1/User/updatePassword/67bffe4444b41f4fe8499ad0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"empresaCoperex",
+								"v1",
+								"User",
+								"updatePassword",
+								"67bffe4444b41f4fe8499ad0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmZmU0NDQ0YjQxZjRmZTg0OTlhZDAiLCJpYXQiOjE3NDA2MzYyNDcsImV4cCI6MTc0MDY1NDI0N30.jAZFq3ymMW9gTdXyKnfHEiyT2RhuwNxgANIoIg03KZU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Andres Miguel\",\r\n    \"surname\": \"Tuy Tuchez\",\r\n    \"username\": \"andmtt13\",\r\n    \"email\": \"AndMTTT13@gmail.com\",\r\n    \"phone\": \"45302352\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/empresaCoperex/v1/User/updateUser/67bffe4444b41f4fe8499ad0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"empresaCoperex",
+								"v1",
+								"User",
+								"updateUser",
+								"67bffe4444b41f4fe8499ad0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresa",
+			"item": [
+				{
+					"name": "Agregar Empresa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmZmU0NDQ0YjQxZjRmZTg0OTlhZDAiLCJpYXQiOjE3NDA3MTkwOTUsImV4cCI6MTc0MDczNzA5NX0.-xw49qALvIgH-IeIXZev1di63A_IfOqVaZc2p3LuRuQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEmpresa\": \"ROPA Hernandez\",\r\n    \"direccionEmpresa\": \"123 Calle Principal, Ciudad, País\",\r\n    \"telefonoEmpresa\": \"12345678\",\r\n    \"emailEmpresa\": \"RopaHernandez123@gmail.com\",\r\n    \"ContactoDueño\": \"Pepe Hernandez\",\r\n    \"anoFundacion\": 2024,\r\n    \"categoriaEmpresa\": \"Ropa\",\r\n    \"nivelImpacto\": \"BAJO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/empresaCoperex/v1/Empresa/agregarEmpresa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"empresaCoperex",
+								"v1",
+								"Empresa",
+								"agregarEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Empresas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmZmU0NDQ0YjQxZjRmZTg0OTlhZDAiLCJpYXQiOjE3NDA3MTkwOTUsImV4cCI6MTc0MDczNzA5NX0.-xw49qALvIgH-IeIXZev1di63A_IfOqVaZc2p3LuRuQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEmpresa\": \"Tech Solutions\",\r\n    \"direccionEmpresa\": \"123 Calle Principal, Ciudad, País\",\r\n    \"telefonoEmpresa\": \"12345678\",\r\n    \"emailEmpresa\": \"contacto@techsolutions.com\",\r\n    \"ContactoDueño\": \"Jose Arrecis\",\r\n    \"anoFundacion\": 1950,\r\n    \"categoriaEmpresa\": \"Tecnologia\",\r\n    \"nivelImpacto\": \"ALTO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/empresaCoperex/v1/Empresa/editarEmpresa/67c14417bebe218236a6748b",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"empresaCoperex",
+								"v1",
+								"Empresa",
+								"editarEmpresa",
+								"67c14417bebe218236a6748b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generar reporte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmZmU0NDQ0YjQxZjRmZTg0OTlhZDAiLCJpYXQiOjE3NDA3NzI2NTksImV4cCI6MTc0MDc5MDY1OX0.o-1CtSTsnAeS7Prk4cOEQg5XVJyPCG6nkW9AIscsjb0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoriaEmpresa\": \"Ropa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/empresaCoperex/v1/Empresa/generarReporte",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"empresaCoperex",
+								"v1",
+								"Empresa",
+								"generarReporte"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

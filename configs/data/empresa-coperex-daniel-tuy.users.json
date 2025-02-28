@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "67bffc37d4be5ac47d43356d"
+  },
+  "name": "Daniel Andrés",
+  "surname": "Tuy Tuchez",
+  "username": "danitt030",
+  "email": "danieltuy@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$pCqgD3Pw3n3OQGsPlA2snA$sAzadREZ8q0XjRW6DLZ2qaZESApUbwBQXSBpI+nCyn8",
+  "phone": "12345678",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67bffe4444b41f4fe8499ad0"
+  },
+  "name": "Andres Miguel",
+  "surname": "Tuy Tuchez",
+  "username": "andmtt13",
+  "email": "AndMTTT13@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$5+odjLvtS1IGEsoUCazh9Q$V8J44+jZTx8l0Eafl0N+Y191CK+TZ24QSJ1p87wZkR0",
+  "phone": "45302352",
+  "role": "ADMIN_ROLE",
+  "status": true
+}]

@@ -30,4 +30,9 @@ export const editarEmpresaValidator = [
     handleErrors
 ];
 
-
+export const generarExcelreporte = [
+    validateJWT,
+    validarCampos,
+    deleteFileOnError,
+    handleErrors
+];

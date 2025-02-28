@@ -1,6 +1,6 @@
 import { Router } from "express"
-import { agregarEmpresa, listarEmpresas, editarEmpresa } from "./empresa.controller.js"
-import { agregarEmpresaValidator, editarEmpresaValidator } from "../middlewares/empresa-validators.js"
+import { agregarEmpresa, editarEmpresa, generarReporte } from "./empresa.controller.js"
+import { agregarEmpresaValidator, editarEmpresaValidator, generarExcelreporte } from "../middlewares/empresa-validators.js"
 
 const router = Router()
 
@@ -10,15 +10,16 @@ router.post(
     agregarEmpresa
 )
 
-router.get(
-    "/listarEmpresas",
-    listarEmpresas
-)
-
 router.put( 
     "/editarEmpresa/:uid",
     editarEmpresaValidator,
     editarEmpresa
+)
+
+router.post(
+    "/generarReporte",
+    generarExcelreporte ,
+    generarReporte
 )
 
 
